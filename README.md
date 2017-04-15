@@ -11,12 +11,12 @@ This project is in the early stages of development.
 
 * Configuration:
     - ```docker-compose build; docker-compose up```
-    - ```docker-compose run -e "RAILS_ENV=test" web rake db:create db:migrate```
+    - ```docker-compose run -e "RAILS_ENV=development" web rake db:create db:migrate```
+    - The application will now be running at localhost:3000
 
-* How to run the test suite (after configuring the database as above):
+* How to run the test suite:
+    - ```docker-compose build; docker-compose up```
+    - ```docker-compose run -e "RAILS_ENV=test" web rake db:create db:migrate```
     - All tests: ```docker-compose run -e "RAILS_ENV=test" web bundle exec rake spec```
     - Specific test: ```docker-compose run -e "RAILS_ENV=test" web rspec spec/path/to/spec.rb```
     - Lint code analysis: ```docker-compose run -e "RAILS_ENV=test" web rubocop```
-
-* Deployment instructions:
-    - You can currently run the application locally by running ```docker-compose build; docker-compose up```.  The application will now be running at localhost:3000

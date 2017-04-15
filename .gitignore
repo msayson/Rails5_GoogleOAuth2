@@ -22,7 +22,8 @@ config/initializers/secret_token.rb
 # Only include if you have production secrets in this file, which is no longer a Rails default
 # config/secrets.yml
 
-# Ignore environment variables file
+# Ignore environment variables files
+config/local_env.yml
 .env
 
 ## Environment normalization:
