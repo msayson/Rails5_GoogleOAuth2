@@ -63,7 +63,7 @@ test:
   <<: *default
   # TODO: figure out how to have both development and test
   #       configurations working
-  # database: connections_test
+  database: connections_test
   # username: connections_test
   # password: connections_test
 
