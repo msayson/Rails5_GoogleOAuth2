@@ -11,11 +11,11 @@ class ApplicationController < ActionController::Base
   private
 
   def current_user
-    begin
-      @current_user ||= User.find(session[:user_id]) if session[:user_id]
-    rescue Exception => e
-      nil
-    end
+    @current_user ||= User.find(session[:user_id]) if session[:user_id]
+  rescue ActiveRecord::RecordNotFound => _
+    logger.warn "No record found for user #{user_id}"
+  rescue StandardError => e
+    logger.warn "Unexpected exception in current_user(): #{e}"
   end
 
   def user_signed_in?
@@ -28,8 +28,7 @@ class ApplicationController < ActionController::Base
   end
 
   def authenticate_user!
-    unless current_user
-      redirect_to root_url, alert: 'Please sign in to view this page.'
-    end
+    return if current_user
+    redirect_to root_url, alert: 'Please sign in to view this page.'
   end
 end
