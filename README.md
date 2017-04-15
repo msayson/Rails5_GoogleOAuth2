@@ -13,7 +13,7 @@ This project is in the early stages of development.
 
 * How to run the test suite (after running ```docker-compose up```):
     - Tests: ```docker-compose run web rake test```
-    - Lint code analysis: ```docker-compose run web rubocop -RD```
+    - Lint code analysis: ```docker-compose run web rubocop```
 
 * Deployment instructions:
     - You can currently run the application locally by running ```docker-compose build; docker-compose up```.  The application will now be running at localhost:3000
