@@ -26,6 +26,11 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
+
+# OAuth libraries
+gem 'omniauth', '1.6.1'
+gem 'omniauth-google-oauth2', '0.4.1'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -38,8 +43,10 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution
   # and get a debugger console
   gem 'byebug', platform: :mri
-  # Static code analysis test
-  gem 'rubocop', '>= 0.48'
+  gem 'factory_girl_rails', '4.8.0' # Fixture replacement/generation
+  gem 'faker', '1.7.3'              # Generate fake data
+  gem 'rubocop', '>= 0.48'          # Static code analysis
+  gem 'rspec-rails', '3.5.2'        # Test framework
 end
 
 group :development do

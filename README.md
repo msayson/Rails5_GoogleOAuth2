@@ -12,7 +12,7 @@ This project is in the early stages of development.
 * Configuration: ```docker-compose build; docker-compose up```
 
 * How to run the test suite (after running ```docker-compose up```):
-    - Tests: ```docker-compose run web rake test```
+    - Tests: ```docker-compose run web bundle exec rake spec```
     - Lint code analysis: ```docker-compose run web rubocop```
 
 * Deployment instructions:
