@@ -9,11 +9,14 @@ This project is in the early stages of development.
 * System dependencies: Docker
     - There's no need to have Ruby or Rails pre-installed. Simply download Docker and you can use our Dockerfile recipe to develop/test/run Connections.
 
-* Configuration: ```docker-compose build; docker-compose up```
+* Configuration:
+    - ```docker-compose build; docker-compose up```
+    - ```docker-compose run -e "RAILS_ENV=test" web rake db:create db:migrate```
 
-* How to run the test suite (after running ```docker-compose up```):
-    - Tests: ```docker-compose run web bundle exec rake spec```
-    - Lint code analysis: ```docker-compose run web rubocop```
+* How to run the test suite (after configuring the database as above):
+    - All tests: ```docker-compose run -e "RAILS_ENV=test" web bundle exec rake spec```
+    - Specific test: ```docker-compose run -e "RAILS_ENV=test" web rspec spec/path/to/spec.rb```
+    - Lint code analysis: ```docker-compose run -e "RAILS_ENV=test" web rubocop```
 
 * Deployment instructions:
     - You can currently run the application locally by running ```docker-compose build; docker-compose up```.  The application will now be running at localhost:3000

@@ -43,10 +43,14 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution
   # and get a debugger console
   gem 'byebug', platform: :mri
+end
+
+group :test do
+  gem 'capybara', '~> 2.13'         # Feature spec tests
   gem 'factory_girl_rails', '4.8.0' # Fixture replacement/generation
   gem 'faker', '1.7.3'              # Generate fake data
-  gem 'rubocop', '>= 0.48'          # Static code analysis
   gem 'rspec-rails', '3.5.2'        # Test framework
+  gem 'rubocop', '>= 0.48'          # Static code analysis
 end
 
 group :development do
