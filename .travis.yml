@@ -9,7 +9,7 @@ services:
 
 before_install:
 - docker-compose up --build -d
-- ./waitForDbSetup.sh
+- ./waitForContainerSetup.sh
 - docker-compose ps
 - docker-compose run -e "RAILS_ENV=test" web rake db:create db:migrate
 
