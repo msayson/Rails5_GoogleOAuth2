@@ -13,10 +13,7 @@ This project is in the early stages of development.
     - Create a local config/local_env.yml and populate its variables (see https://github.com/zquestz/omniauth-google-oauth2)
       ```yaml
       GOOGLE_CLIENT_ID: 'Enter the Google client id for your project'
-      GOOGLE_PRIVATE_KEY: 'Enter the Google private key for your project'
-
-      OMNIAUTH_PROVIDER_KEY: 'Enter OmniAuth provider key (can use OMNIAUTH_PROVIDER_KEY)'
-      OMNIAUTH_PROVIDER_SECRET: 'Enter OmniAuth provider key (can use GOOGLE_PRIVATE_KEY)'
+      GOOGLE_CLIENT_SECRET: 'Enter the Google client secret for your project'
       ```
 
 * Running the application locally:
