@@ -38,6 +38,11 @@ Rails.application.configure do
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
 
+  # Print messages to log that are >= this level
+  # The available log levels are: :debug, :info, :warn, :error, and :fatal,
+  # corresponding to the log level numbers from 0 up to 4 respectively.
+  config.log_level = :info
+
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 
