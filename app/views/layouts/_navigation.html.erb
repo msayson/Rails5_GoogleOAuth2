@@ -1,4 +1,6 @@
-<ul class="nav">
-  <li><%= link_to 'Home', root_path %></li>
-  <%= render 'layouts/nav_links_for_auth' %>
-</ul>
+<div class='wrapper'>
+  <%= link_to 'Home', root_path, class: 'site-header-title' %>
+  <div class='site-header-nav-bar'>
+    <%= render 'layouts/nav_links_for_auth' %>
+  </div>
+</div>

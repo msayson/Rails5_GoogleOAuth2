@@ -13,3 +13,36 @@
  *= require_tree .
  *= require_self
  */
+
+/* Site header styles */
+.site-header {
+  border-bottom: 1px solid #e8e8e8;
+  border-top: 5px solid #424242;
+  min-height: 56px;
+  position: relative;
+}
+
+.site-header-title {
+  color: #424242;
+  float: left;
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  line-height: 56px;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
+.site-header-nav-bar {
+  float: right;
+  line-height: 56px;
+}
+
+/* Horizontally centers body */
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+  padding-left: 30px;
+  padding-right: 30px;
+}

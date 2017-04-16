@@ -9,12 +9,14 @@
   </head>
 
   <body>
-    <header>
+    <header class='site-header'>
       <%= render 'layouts/navigation' %>
     </header>
     <main role='main'>
-      <%= render 'layouts/messages' %>
-      <%= yield %>
+      <div class='wrapper'>
+        <%= render 'layouts/messages' %>
+        <%= yield %>
+      </div>
     </main>
   </body>
 </html>
