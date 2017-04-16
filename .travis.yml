@@ -25,12 +25,10 @@ before_script:
 - docker-compose up --build -d
 - ./waitForContainerSetup.sh
 - docker-compose ps
-- docker-compose run -e "RAILS_ENV=test" web rake db:create db:migrate
-- sleep 4
-- docker-compose run -e "RAILS_ENV=test" web rake spec
+- docker-compose run -e "RAILS_ENV=test" web rake db:create db:migrate spec
 
 script:
-- bundle exec rake spec
+- sleep 1
 
 after_script:
 - docker-compose down
