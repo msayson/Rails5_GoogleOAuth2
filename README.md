@@ -10,6 +10,16 @@ This project is in the early stages of development.
     - There's no need to have Ruby or Rails pre-installed. Simply download Docker and you can use our Dockerfile recipe to develop/test/run Connections.
 
 * Configuration:
+    - Create a local config/local_env.yml and populate its variables (see https://github.com/zquestz/omniauth-google-oauth2)
+      ```yaml
+      GOOGLE_CLIENT_ID: 'Enter the Google client id for your project'
+      GOOGLE_PRIVATE_KEY: 'Enter the Google private key for your project'
+
+      OMNIAUTH_PROVIDER_KEY: 'Enter OmniAuth provider key (can use OMNIAUTH_PROVIDER_KEY)'
+      OMNIAUTH_PROVIDER_SECRET: 'Enter OmniAuth provider key (can use GOOGLE_PRIVATE_KEY)'
+      ```
+
+* Running the application locally:
     - ```docker-compose build; docker-compose up```
     - ```docker-compose run -e "RAILS_ENV=development" web rake db:create db:migrate```
     - The application will now be running at localhost:3000
