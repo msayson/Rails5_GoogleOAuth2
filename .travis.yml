@@ -1,17 +1,13 @@
 sudo: required
 
-language: ruby
-rvm:
-  - 2.4.1
+# Skip installation step, all tests run within Docker
+install: true
 
 services:
   - docker
 
 env:
   DOCKER_COMPOSE_VERSION: 1.12.0
-
-# Enable caching of gem dependencies
-cache: bundler
 
 # Update docker-compose
 before_script:
@@ -22,8 +18,4 @@ before_script:
 - docker-compose --version
 
 script:
-- docker-compose up --build -d
-- ./waitForContainerSetup.sh
-- docker-compose ps
-- docker-compose run -e "RAILS_ENV=test" web rake db:create db:migrate spec
-- docker-compose down
+- ./runTestsInNewContainers.sh
