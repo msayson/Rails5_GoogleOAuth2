@@ -1,4 +1,10 @@
+# Ignore Git
 .git*
+
+# Ignore temporary files
 log
 tmp
+
+# Ignore Docker files
 Dockerfile
+.dockerignore

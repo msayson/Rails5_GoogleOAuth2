@@ -1,0 +1,19 @@
+sudo: required
+
+language: ruby
+rvm:
+  - 2.4.1
+
+services:
+  - docker
+
+before_install:
+- docker-compose up --build -d
+- docker-compose ps
+- docker-compose run -e "RAILS_ENV=test" web rake db:create db:migrate
+
+script:
+- bundle exec rake spec
+
+after_script:
+- docker-compose down

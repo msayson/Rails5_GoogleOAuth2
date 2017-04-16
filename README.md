@@ -27,3 +27,17 @@ This project is in the early stages of development.
     - All tests: ```docker-compose run -e "RAILS_ENV=test" web bundle exec rake spec```
     - Specific test: ```docker-compose run -e "RAILS_ENV=test" web rspec spec/path/to/spec.rb```
     - Lint code analysis: ```docker-compose run -e "RAILS_ENV=test" web rubocop```
+
+### Code Status
+
+Master branch:
+
+[<img src="https://travis-ci.org/msayson/connections.svg?branch=master" alt="Build Status" />](https://travis-ci.org/msayson/connections)
+
+Dev branch:
+
+[<img src="https://travis-ci.org/msayson/connections.svg?branch=dev" alt="Build Status" />](https://travis-ci.org/msayson/connections)
+
+### License
+
+Connections is released under the [MIT License](http://www.opensource.org/licenses/MIT).
