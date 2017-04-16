@@ -14,21 +14,16 @@ env:
 cache: bundler
 
 # Update docker-compose
-before_install:
+before_script:
 - sudo rm /usr/local/bin/docker-compose
 - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
 - chmod +x docker-compose
 - sudo mv docker-compose /usr/local/bin
 - docker-compose --version
 
-before_script:
+script:
 - docker-compose up --build -d
 - ./waitForContainerSetup.sh
 - docker-compose ps
 - docker-compose run -e "RAILS_ENV=test" web rake db:create db:migrate spec
-
-script:
-- sleep 1
-
-after_script:
 - docker-compose down
