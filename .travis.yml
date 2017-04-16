@@ -14,7 +14,7 @@ before_install:
 - docker-compose run -e "RAILS_ENV=test" web rake db:create db:migrate
 
 script:
-- bundle exec rake spec
+- RAILS_ENV=test bundle exec rake spec
 
 after_script:
 - docker-compose down
