@@ -1,0 +1,16 @@
+version: '2'
+services:
+  db:
+    image: postgres:9.6
+    environment:
+      - POSTGRES_USER=connections_developer
+      - POSTGRES_PASSWORD=connections_developer
+  web:
+    build: .
+    command: ./runServer.sh
+    volumes:
+      - .:/usr/src/connections_app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
