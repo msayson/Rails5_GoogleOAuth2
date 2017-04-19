@@ -2,9 +2,14 @@
 .git*
 
 # Ignore temporary files
-log
-tmp
+log/
+tmp/
 
 # Ignore Docker files
 Dockerfile
+docker-compose.yml
 .dockerignore
+
+# Ignore scripts not needed in containers
+.travis.yml
+*.sh
