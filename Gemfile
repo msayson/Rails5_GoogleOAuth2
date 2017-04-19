@@ -27,13 +27,11 @@ gem 'omniauth-google-oauth2', '0.4.1'
 # ========================
 # JavaScript / CoffeeScript
 # ========================
-# See https://github.com/rails/execjs#readme for more supported runtimes
-
-# RubyRacer embeds the V8 Javascript Interpreter into Ruby
-# gem 'therubyracer', platforms: :ruby
 gem 'coffee-rails', '~> 4.2' # CoffeeScript support
 gem 'jquery-rails' # JQuery JavaScript library
 gem 'uglifier', '>= 1.3.0' # Uglifier compresses JavaScript assets
+# RubyRacer embeds the V8 Javascript Interpreter into Ruby
+# gem 'therubyracer', platforms: :ruby
 
 # ========================
 # Stylesheets
@@ -43,10 +41,11 @@ gem 'sass-rails', '~> 5.0' # Use SCSS for stylesheets
 # ========================
 # Miscellaneous
 # ========================
-gem 'figaro', '~> 1.1.1' # Environment variable management
-gem 'jbuilder', '~> 2.5' # Interface for building JSON APIs
-gem 'turbolinks', '~> 5' # Speed up web app navigation
-gem 'tzinfo-data', platforms: %I[mingw mswin x64_mingw jruby] # Timezones
+gem 'figaro', '~> 1.1.1'    # Environment variable management
+gem 'jbuilder', '~> 2.5'    # Interface for building JSON APIs
+gem 'redcarpet', '~> 3.4.0' # Markdown processing
+gem 'turbolinks', '~> 5'    # Speed up web app navigation
+# gem 'tzinfo-data', platforms: %I[mingw mswin x64_mingw jruby] # Timezones
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution
