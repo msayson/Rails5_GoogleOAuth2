@@ -13,4 +13,16 @@ feature 'Sign out', :omniauth do
     click_link 'Sign out'
     expect(page).to have_content 'Signed out'
   end
+
+  # Scenario: User signs out from a non-root page
+  #   Given I am signed in and on a non-root page
+  #   When I sign out
+  #   Then I am redirected to the root page
+  scenario 'should redirect to root page' do
+    signin
+    click_link 'About'
+    expect(page).to have_current_path(about_path)
+    click_link 'Sign out'
+    expect(page).to have_current_path(root_path)
+  end
 end
