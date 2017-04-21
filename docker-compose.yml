@@ -3,13 +3,13 @@ services:
   db:
     image: postgres:9.6
     environment:
-      - POSTGRES_USER=connections_developer
-      - POSTGRES_PASSWORD=connections_developer
+      - POSTGRES_USER=rails5oauth2_developer
+      - POSTGRES_PASSWORD=rails5oauth2_developer
   web:
     build: .
     command: bundle exec rails s -p 3000 -b '0.0.0.0'
     volumes:
-      - .:/usr/src/connections_app
+      - .:/usr/src/rails5oauth2_app
     ports:
       - "3000:3000"
     depends_on:

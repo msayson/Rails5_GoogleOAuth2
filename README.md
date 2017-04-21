@@ -1,10 +1,8 @@
-# Connections
+# Rails5_GoogleOAuth2
 
-[<img src="https://travis-ci.org/msayson/connections.svg?branch=master" alt="Build Status" />](https://travis-ci.org/msayson/connections)
+[<img src="https://travis-ci.org/msayson/Rails5_GoogleOAuth2.svg?branch=master" alt="Build Status" />](https://travis-ci.org/msayson/Rails5_GoogleOAuth2)
 
-Connections will be a web application in which users can keep notes on personal connections.
-
-This project is in the early stages of development, and is being built primarily for fun and to explore various technologies.
+This is an example Rails 5 application which uses Google OAuth2 for user authentication.
 
 ### Technology stack
 
@@ -28,7 +26,7 @@ GOOGLE_CLIENT_SECRET: 'Enter the Google client secret for your project'
 ### How to run the app locally (port 3000)
 
 ```bash
-./runConnections.sh
+./runAppLocally.sh
 ```
 
 ### How to run tests in a self-contained run
@@ -41,7 +39,7 @@ This sets up Docker containers, runs tests, then tears down the containers.
 
 ### How to run tests on-demand
 
-- ```./runConnections.sh``` (in a separate terminal)
+- ```./runAppLocally.sh``` (in a separate terminal)
 - ```docker-compose run -e "RAILS_ENV=test" web rake db:migrate```
 - All tests: ```docker-compose run -e "RAILS_ENV=test" web bundle exec rake spec```
 - Specific test: ```docker-compose run -e "RAILS_ENV=test" web rspec spec/path/to/spec.rb```
@@ -51,4 +49,4 @@ You can use this approach to continually test during development.
 
 ### License
 
-Connections is released under the [MIT License](http://www.opensource.org/licenses/MIT).
+Rails5_GoogleOAuth2 is released under the [MIT License](http://www.opensource.org/licenses/MIT).

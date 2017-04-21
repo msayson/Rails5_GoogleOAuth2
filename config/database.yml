@@ -22,9 +22,9 @@ default: &default
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   # eg. pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   pool: 5
-  database: connections_developer
-  username: connections_developer
-  password: connections_developer
+  database: rails5oauth2_developer
+  username: rails5oauth2_developer
+  password: rails5oauth2_developer
 
 development:
   <<: *default
@@ -33,7 +33,7 @@ development:
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-  #username: connections
+  #username: rails5oauth2
 
   # The password associated with the postgres role (username).
   #password:
@@ -61,7 +61,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: connections_test
+  database: rails5oauth2_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -84,6 +84,6 @@ test:
 #
 production:
   <<: *default
-  database: connections_production
-  username: connections
-  password: <%= ENV['CONNECTIONS_DATABASE_PASSWORD'] %>
+  database: rails5oauth2_production
+  username: rails5oauth2
+  password: <%= ENV['RAILS5OAUTH2_DATABASE_PASSWORD'] %>

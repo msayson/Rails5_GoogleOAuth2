@@ -6,7 +6,7 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module Connections
+module Rails5_GoogleOAuth2
   # Default config settings that may be overwritten
   # by specific environments (development, production, test)
   class Application < Rails::Application

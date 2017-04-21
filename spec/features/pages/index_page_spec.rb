@@ -6,9 +6,9 @@ feature 'Home page' do
   # Scenario: Visit the 'home' page
   #   Given I am a visitor
   #   When I visit the 'home' page
-  #   Then I see "Welcome to Connections"
+  #   Then I see "Welcome to Rails5_GoogleOAuth2"
   scenario 'Visit the home page' do
     visit ''
-    expect(page).to have_content 'Welcome to Connections'
+    expect(page).to have_content 'Welcome to Rails5_GoogleOAuth2'
   end
 end

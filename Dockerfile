@@ -7,7 +7,7 @@ RUN apt-get update \
         postgresql-client \
     && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /usr/src/connections_app
+WORKDIR /usr/src/rails5oauth2_app
 COPY Gemfile* ./
 RUN bundle install
 COPY . .

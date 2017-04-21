@@ -10,11 +10,11 @@ feature 'About page' do
   #   Then I see a description of the application
   #   and can find a link to its source code.
   scenario 'Visit the about page' do
-    description = 'users can keep notes on personal connections'
-    source_code_link = 'You can find the source code for Connections at ' \
-                       'https://github.com/msayson/connections.'
+    description = 'Rails 5 application which uses Google OAuth2'
+    src_code_link = 'You can find the source code for Rails5_GoogleOAuth2 ' \
+                    'at https://github.com/msayson/Rails5_GoogleOAuth2.'
     visit 'about'
     expect(page).to have_content description
-    expect(page).to have_content source_code_link
+    expect(page).to have_content src_code_link
   end
 end
