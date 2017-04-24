@@ -23,6 +23,8 @@ GOOGLE_CLIENT_ID: 'Enter the Google client id for your project'
 GOOGLE_CLIENT_SECRET: 'Enter the Google client secret for your project'
 ```
 
+Note that Google OAuth requires verification of website ownership before it will accept Google authentication requests.  See [https://developers.google.com/identity/protocols/OAuth2](https://developers.google.com/identity/protocols/OAuth2) for the latest instructions on how to verify your website.
+
 ### How to run the app locally (port 3000)
 
 ```bash
