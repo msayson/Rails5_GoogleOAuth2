@@ -46,6 +46,21 @@ Rails.application.configure do
   # and use secure cookies.
   config.force_ssl = true
 
+  # Set HTTP/S security headers
+  config.action_dispatch.default_headers = {
+    'Content-Security-Policy' =>
+      "default-src 'self' https://accounts.google.com; " \
+      "img-src 'self' https://accounts.google.com https://travis-ci.org https://api.travis-ci.org; " \
+      "media-src 'none'; " \
+      "object-src 'none'; " \
+      "script-src 'self' 'unsafe-inline' https://accounts.google.com; " \
+      "style-src 'self' https://accounts.google.com https://travis-ci.org; ",
+    'Referrer-Policy' => 'same-origin',
+    'X-Content-Type-Options' => 'nosniff',
+    'X-Frame-Options' => 'SAMEORIGIN',
+    'X-XSS-Protection' => '1; mode=block'
+  }
+
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.
   config.log_level = :debug
