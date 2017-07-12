@@ -28,7 +28,6 @@ gem 'omniauth-google-oauth2', '0.4.1'
 # JavaScript / CoffeeScript
 # ========================
 gem 'coffee-rails', '~> 4.2' # CoffeeScript support
-gem 'jquery-rails' # JQuery JavaScript library
 gem 'uglifier', '>= 1.3.0' # Uglifier compresses JavaScript assets
 # RubyRacer embeds the V8 Javascript Interpreter into Ruby
 # gem 'therubyracer', platforms: :ruby
