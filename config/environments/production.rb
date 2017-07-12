@@ -55,7 +55,7 @@ Rails.application.configure do
       "object-src 'none'; " \
       "script-src 'self' https://accounts.google.com; " \
       "style-src 'self' https://accounts.google.com https://travis-ci.org; ",
-    'Referrer-Policy' => 'same-origin',
+    'Referrer-Policy' => 'strict-origin-when-cross-origin',
     'X-Content-Type-Options' => 'nosniff',
     'X-Frame-Options' => 'SAMEORIGIN',
     'X-XSS-Protection' => '1; mode=block'
