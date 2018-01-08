@@ -53,7 +53,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'capybara', '~> 2.13'         # Feature spec tests
+  gem 'capybara', '~> 2.16'         # Feature spec tests
   gem 'factory_girl_rails', '4.8.0' # Fixture replacement/generation
   gem 'faker', '1.7.3'              # Generate fake data
   gem 'rspec-rails', '3.5.2'        # Test framework
