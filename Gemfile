@@ -11,12 +11,9 @@ end
 # ========================
 gem 'pg', '~> 0.18'     # Use PostgreSQL for database
 gem 'puma', '~> 3.0'    # Use Puma for app server
-gem 'rails', '~> 5.0.2' # Ruby on Rails
+gem 'rails', '~> 5.1.0' # Ruby on Rails
 
 # gem 'bcrypt', '~> 3.1.7' # Use ActiveModel has_secure_password
-# gem 'capistrano-rails', group: :development # Tool for easy deployment
-# gem 'redis', '~> 3.0' # Redis is an in-memory data structure store
-# You can use Redis as a fast cache, see Action Cable for production
 
 # ========================
 # Authentication libraries
@@ -53,11 +50,11 @@ group :development, :test do
 end
 
 group :test do
-  gem 'capybara', '~> 2.16'         # Feature spec tests
+  gem 'capybara', '~> 3.1'          # Feature spec tests
   gem 'factory_girl_rails', '4.8.0' # Fixture replacement/generation
   gem 'faker', '1.7.3'              # Generate fake data
-  gem 'rspec-rails', '3.5.2'        # Test framework
-  gem 'rubocop', '>= 0.48'          # Static code analysis
+  gem 'rspec-rails', '3.7.2'        # Test framework
+  gem 'rubocop', '>= 0.48'          # Style guide code analyzer
 end
 
 group :development do

@@ -15,10 +15,10 @@ ActiveRecord::Schema.define(version: 20170415051051) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "users", force: :cascade do |t|
-    t.string   "name"
-    t.string   "provider"
-    t.string   "uid"
+  create_table "users", id: :serial, force: :cascade do |t|
+    t.string "name"
+    t.string "provider"
+    t.string "uid"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
