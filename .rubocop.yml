@@ -7,6 +7,9 @@ AllCops:
   Exclude:
     - db/schema.rb
 
-Style/FileName:
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/MixinUsage:
   Exclude:
-    - 'Gemfile'
+    - bin/*
