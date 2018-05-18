@@ -6,7 +6,7 @@ This is an example Rails 5 application which uses Google OAuth2 for user authent
 
 ### Technology stack
 
-Ruby 2.4.1, Rails 5.0.2, PostgreSQL 9.6, Docker
+Ruby 2.4, Rails 5.1, PostgreSQL 9.6, Docker
 
 ### System dependencies
 
