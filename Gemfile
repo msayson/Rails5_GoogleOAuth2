@@ -25,8 +25,8 @@ gem 'puma', '~> 3.11.4' # Use Puma for app server
 # ========================
 # Authentication libraries
 # ========================
-gem 'omniauth', '1.6.1'
-gem 'omniauth-google-oauth2', '0.4.1'
+gem 'omniauth', '1.8.1'
+gem 'omniauth-google-oauth2', '0.5.3'
 
 # ========================
 # JavaScript / CoffeeScript
