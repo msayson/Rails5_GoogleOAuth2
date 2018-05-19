@@ -9,11 +9,18 @@ end
 # ========================
 # Core technology stack
 # ========================
+
+# Rails components used by this project
+gem 'activerecord', '5.1.6'
+gem 'activemodel', '5.1.6'
+gem 'actionpack', '5.1.6'
+gem 'actionview', '5.1.6'
+gem 'activesupport', '5.1.6'
+gem 'railties', '5.1.6'
+gem 'sprockets-rails', '3.2.1'
+
 gem 'pg', '0.21.0'      # Use PostgreSQL for database
 gem 'puma', '~> 3.11.4' # Use Puma for app server
-gem 'rails', '5.1.6'    # Ruby on Rails
-
-# gem 'bcrypt', '~> 3.1.7' # Use ActiveModel has_secure_password
 
 # ========================
 # Authentication libraries
@@ -46,7 +53,7 @@ gem 'turbolinks', '~> 5.1'  # Speed up web app navigation
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution
   # and get a debugger console
-  gem 'byebug', platform: :mri
+  gem 'byebug', '~> 10.0', platform: :mri
 end
 
 group :test do
