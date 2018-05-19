@@ -45,7 +45,6 @@ gem 'sass-rails', '~> 5.0.7' # Use SCSS for stylesheets
 # Miscellaneous
 # ========================
 gem 'figaro', '~> 1.1.1'    # Environment variable management
-gem 'jbuilder', '~> 2.5'    # Interface for building JSON APIs
 gem 'redcarpet', '~> 3.4.0' # Markdown processing
 gem 'turbolinks', '~> 5.1'  # Speed up web app navigation
 # gem 'tzinfo-data', platforms: %I[mingw mswin x64_mingw jruby] # Timezones
@@ -57,6 +56,7 @@ group :development, :test do
 end
 
 group :test do
+  gem 'brakeman', '>= 4.3', require: false # Security code analyzer
   gem 'capybara', '~> 3.1'          # Feature spec tests
   gem 'factory_girl_rails', '4.8.0' # Fixture replacement/generation
   gem 'faker', '1.7.3'              # Generate fake data
