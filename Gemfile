@@ -11,15 +11,15 @@ end
 # ========================
 
 # Rails components used by this project
-gem 'activerecord', '5.1.6'
-gem 'activemodel', '5.1.6'
-gem 'actionpack', '5.1.6'
-gem 'actionview', '5.1.6'
-gem 'activesupport', '5.1.6'
-gem 'railties', '5.1.6'
-gem 'sprockets-rails', '3.2.1'
+gem 'activerecord', '~> 5.1.6'
+gem 'activemodel', '~> 5.1.6'
+gem 'actionpack', '~> 5.1.6'
+gem 'actionview', '~> 5.1.6'
+gem 'activesupport', '~> 5.1.6'
+gem 'railties', '~> 5.1.6'
+gem 'sprockets-rails', '~> 3.2.1'
 
-gem 'pg', '0.21.0'      # Use PostgreSQL for database
+gem 'pg', '~> 0.21.0'      # Use PostgreSQL for database
 gem 'puma', '~> 3.11.4' # Use Puma for app server
 
 # ========================
@@ -58,9 +58,9 @@ end
 group :test do
   gem 'brakeman', '>= 4.3', require: false # Security code analyzer
   gem 'capybara', '~> 3.1'          # Feature spec tests
-  gem 'factory_girl_rails', '4.8.0' # Fixture replacement/generation
-  gem 'faker', '1.7.3'              # Generate fake data
-  gem 'rspec-rails', '3.7.2'        # Test framework
+  gem 'factory_girl_rails', '~> 4.8.0' # Fixture replacement/generation
+  gem 'faker', '~> 1.7.3'              # Generate fake data
+  gem 'rspec-rails', '~> 3.7.2'        # Test framework
   gem 'rubocop', '>= 0.56'          # Style guide code analyzer
 end
 
