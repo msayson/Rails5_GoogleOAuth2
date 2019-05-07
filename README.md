@@ -4,6 +4,10 @@
 
 This is an example Rails 5 application which uses Google OAuth2 for user authentication.
 
+Beta website: https://rails5-googleoauth2-beta.herokuapp.com
+
+Production website: https://rails5-googleoauth2.herokuapp.com
+
 ### Technology stack
 
 Ruby 2.4, Rails 5.1, PostgreSQL 9.6, Docker
