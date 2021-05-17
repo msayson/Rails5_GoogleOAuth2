@@ -45,7 +45,7 @@ gem 'sass-rails', '~> 5.0.7' # Use SCSS for stylesheets
 # Miscellaneous
 # ========================
 gem 'figaro', '~> 1.1.1'    # Environment variable management
-gem 'redcarpet', '~> 3.4.0' # Markdown processing
+gem 'redcarpet', '~> 3.5.1' # Markdown processing
 gem 'turbolinks', '~> 5.1'  # Speed up web app navigation
 # gem 'tzinfo-data', platforms: %I[mingw mswin x64_mingw jruby] # Timezones
 
