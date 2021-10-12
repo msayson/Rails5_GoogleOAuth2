@@ -20,7 +20,7 @@ gem 'railties', '~> 5.1.6'
 gem 'sprockets-rails', '~> 3.2.1'
 
 gem 'pg', '~> 0.21.0'      # Use PostgreSQL for database
-gem 'puma', '~> 4.3.8' # Use Puma for app server
+gem 'puma', '~> 4.3.9' # Use Puma for app server
 
 # ========================
 # Authentication libraries
